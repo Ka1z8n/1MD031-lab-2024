@@ -1,35 +1,117 @@
-
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-    <title>BurgerMaster</title>
+    <title>McBurger</title>
     <meta charset="utf-8"/>
 </head>
+
 <body>
-    <h1>Welcome to Daddy Burgers Online</h1>
-    <h2>Select your daddy burger choice:</h2>
-    <p>Choose either option below!</p>
-    <h2>    Monster Daddy</h2>
 
-    <!-- Use a relative path or ensure the image is in the same directory -->
-    <img src="Yummy burger.jpg" alt="Yummy Burger" />
+    <h1>Welcome to McBurgers Online</h1>
+    <h2>Select your McBurger choice:</h2>
+    <p>Our Most Popular Menus:</p>
+     <!-- Skapar ett mellanslag -->
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <!-- inline-block gör så att man kan placera sidan vid sidan -->
+    <div style="display: inline-block;">
+        <dl>
+            <h3>Smash Burger</h3>
+            <img src="Smash-Burger.webp" alt="Smash-Burger" style="width: 200px" />
+            <li>Best testing Smash burger (1000 kCal)</li>
+            <li>Covered in fancy cheese (contains lactose)</li>
+            <li>Sourdough bread (with gluten)</li>
+        </dl>
+    </div>
 
-    <header>
-       Title
-    </header>
-    <nav> Menu items </nav>
-    <main>
-       <section>
-          Content
-       </section>
-       <section>
-          Content
-       </section>
-    </main>
-    <footer>
-       End notes
-    </footer>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    <div style="display: inline-block;">
+        <dl>
+            <h3>Vegan Burger</h3>
+            <img src="vegan-burger.jpg" alt="vegan-burger" style="width: 300px" />
+            <li>Best tasting vegan burger (850 kCal)</li>
+            <li>Falafel and halloumi cheese (lactose-free)</li>
+            <li>Gluten-free bread</li>
+        </dl>
+    </div>
+
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    <div style="display: inline-block;">
+        <dl>
+            <h3>Spicy Burger</h3>
+            <img src="spicy-burger.jpg" alt="spicy burger" style="width: 300px" />
+            <li>Hot and spicy flavor (650 kCal)</li>
+            <li>Loaded with jalapeños (spicy)</li>
+            <li>Whole wheat bun (contains gluten)</li>
+        </dl>
+    </div>
+  
+    <h4>
+        Please enter your delivery information:
+    </h4>
+
+    <p>
+        <label for="fullname">Fullname</label><br>
+        <input type="text" id="firstandlastname" name="fl" required="required" placeholder="First and Last name">
+    </p>
+    <p>
+        <label for="E-mail">E-mail</label><br>
+        <input type="email" id="email" name="em" required="required" placeholder="E-mail address">
+    </p>
+    <p>
+        <label for="address">Adress</label><br>
+        <input type="text" id="Youraddress" name="ad" placeholder="Your adress">
+    </p>
+   <p>
+        <label for="house">House</label><br>
+        <input type="text" id="Housenumber" name="hn" placeholder="House number">
+   </p>
+
+   <p>
+        <legend>Please Select Payment Method:</legend>
+        <select name="payment_method" id="payment_method" required>
+            <option value="">- Select Payment Method -</option>
+            <option value="cash">Cash</option>
+            <option value="debit_card">Debit Card</option>
+            <option value="credit_card">Credit Card</option>
+            <option value="google_pay">Google Pay</option>
+            <option value="applepay">Apple pay</option>
+            <option value="paypal">PayPal</option>
+        </select>
+
+   </p>
+
+    <p>
+        <legend>Please Select Gender:<legend>
+        <input type="radio" id="male" name="ml" placeholder="male">
+        <label for="male">Male</label><br>
+   
+        <input type="radio" id="Female" name="Female" placeholder="female">
+        <label for="female">Female</label><br>
+   
+        <input type="radio" id="other" name="other" value="other">
+        <label for="other">Other</label><br>
+   
+        <button type="submit">Submit</button>
+    </p>    
+    <button type="submit">
+        <img src="tick-sign.png" style="width: 20px" >
+        Place my order please!
+      </button>
+   
+   
+
+
+
+
+    <hr/>
+    &copy; <span>2024 McBurgers Co-Inc.</span>
+    <a href="http://Mcburgers.com">McBurgers.com</a>
 </body>
-
 </html>
+
+
+
+
 
