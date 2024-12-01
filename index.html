@@ -3,50 +3,61 @@
 <head>
     <title>McBurger</title>
     <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="public/css/style.css">
+    
+
 </head>
 
 <body>
 
-    <h1>Welcome to McBurgers Online</h1>
-    <h2>Select your McBurger choice:</h2>
-    <p>Our Most Popular Menus:</p>
-     <!-- Skapar ett mellanslag -->
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <!-- inline-block gör så att man kan placera sidan vid sidan -->
-    <div style="display: inline-block;">
-        <dl>
-            <h3>Smash Burger</h3>
-            <img src="Smash-Burger.webp" alt="Smash-Burger" style="width: 200px" />
-            <li>Best testing Smash burger (1000 kCal)</li>
-            <li>Covered in fancy cheese (contains lactose)</li>
-            <li>Sourdough bread (with gluten)</li>
-        </dl>
+    <div class="header-part">
+        <h1>Welcome to McBurgers Online</h1>
+        <div class="header-image">
+            <img id="header-image" src="restaurants_happy.jpg" alt="Delicious Burger">
+        </div>
     </div>
 
-     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-    <div style="display: inline-block;">
-        <dl>
-            <h3>Vegan Burger</h3>
-            <img src="vegan-burger.jpg" alt="vegan-burger" style="width: 300px" />
-            <li>Best tasting vegan burger (850 kCal)</li>
-            <li>Falafel and halloumi cheese (lactose-free)</li>
-            <li>Gluten-free bread</li>
-        </dl>
-    </div>
+    <section id="burger-list">
+        <h2>Select your McBurger choice:</h2>
+        <p>Our Most Popular Menus:</p>
+        
+        <div class="burger-item" style="display: inline-block;">
+            <dl>
+                <h3>Smash Burger</h3>
+                <img src="Smash-Burger.webp" alt="Smash-Burger" style="width: 200px" />
+                <li>Best testing Smash burger (1000 kCal)</li>
+                <li>Covered in fancy cheese (contains <span class="ingredient">lactose</span>)</li>
+                <li>Sourdough bread (with <span class="ingredient">gluten</span>)</li>
+            </dl>
+        </div>
 
-     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-    <div style="display: inline-block;">
-        <dl>
-            <h3>Spicy Burger</h3>
-            <img src="spicy-burger.jpg" alt="spicy burger" style="width: 300px" />
-            <li>Hot and spicy flavor (650 kCal)</li>
-            <li>Loaded with jalapeños (spicy)</li>
-            <li>Whole wheat bun (contains gluten)</li>
-        </dl>
-    </div>
-  
+    
+        <div class="burger-item" style="display: inline-block;">
+            <dl>
+                <h3>Vegan Burger</h3>
+                <img src="vegan-burger.jpg" alt="vegan-burger" style="width: 300px" />
+                <li>Best tasting vegan burger (850 kCal)</li>
+                <li>Falafel and halloumi cheese (<span class="ingredient">lactose</span>)</li>
+                <li><span class="ingredient">Gluten free</span> bread</li>
+            </dl>
+        </div>
+    
+     
+    
+        <div class="burger-item" style="display: inline-block;">
+            <dl>
+                <h3>Spicy Burger</h3>
+                <img src="spicy-burger.jpg" alt="spicy burger" style="width: 300px" />
+                <li>Hot and spicy flavor (650 kCal)</li>
+                <li>Loaded with jalapeños and cheese (<span class="ingredient">lactose</span>)</li>
+                <li>Whole wheat bun (contains <span class="ingredient">gluten</span>)</li>
+            </dl>
+        </div>
+    
+    </section>
+    
+  <section id="order-info">
     <h4>
         Please enter your delivery information:
     </h4>
@@ -84,13 +95,13 @@
 
     <p>
         <legend>Please Select Gender:<legend>
-        <input type="radio" id="male" name="ml" placeholder="male">
+        <input type="radio" id="male" name="gender" placeholder="male">
         <label for="male">Male</label><br>
    
-        <input type="radio" id="Female" name="Female" placeholder="female">
+        <input type="radio" id="Female" name="gender" placeholder="female">
         <label for="female">Female</label><br>
    
-        <input type="radio" id="other" name="other" value="other">
+        <input type="radio" id="other" name="gender" value="other">
         <label for="other">Other</label><br>
    
         <button type="submit">Submit</button>
@@ -99,15 +110,14 @@
         <img src="tick-sign.png" style="width: 20px" >
         Place my order please!
       </button>
-   
-   
-
-
+    </section>
 
 
     <hr/>
     &copy; <span>2024 McBurgers Co-Inc.</span>
     <a href="http://Mcburgers.com">McBurgers.com</a>
+
+ 
 </body>
 </html>
 
