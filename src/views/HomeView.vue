@@ -125,7 +125,7 @@ export default {
       location: { x: 0,
             y: 0
           },
-       currentOrderNumber:0
+       currentOrderNumber:1
 
     }
   },
