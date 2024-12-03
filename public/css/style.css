@@ -90,14 +90,13 @@ button:hover {
     padding: 20px;
 }
 .header-part {
-    margin: 0 25px; /* Add equal left and right margins */
+    margin: 0 15px; /* Add equal left and right margins */
     position: relative; /* Set this to allow absolute positioning of child elements */
     
 }
-
 .header-part h1 {
     position: absolute; /* Position the headline absolutely */
-    top: 60px; /* Adjust this value as needed */
+    top: 70px; /* Adjust this value as needed */
     left: 100px; /* Adjust this value as needed */
     color: black; /* Ensure text is readable against the image */
     z-index: 1; /* Ensure it appears above the image */
@@ -108,4 +107,18 @@ button:hover {
     border-radius: 5px; 
     opacity: 0.5;
 }
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr); /* Change to 3 equal columns */
+    background-color: black;
+    color: #444;
+}
 
+.burger-card {
+    background-color: gray;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 110%;
+}
